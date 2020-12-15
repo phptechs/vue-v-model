@@ -1,5 +1,14 @@
 <template>
-  <div class="hello"></div>
+  <div class="hello">
+    <select :value="selected">
+      <option disabled value="">Please select one</option>
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+    </select>
+    <br />
+    <span>Selected: {{ selected }}</span>
+  </div>
 </template>
 
 <script>
@@ -7,6 +16,11 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String,
+  },
+  data() {
+    return {
+      selected: "B",
+    };
   },
 };
 </script>

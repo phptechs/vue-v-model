@@ -43,3 +43,30 @@ Uses `checked` property and `@change` event
 <!-- child -->
 <input :checked="something" @change="$emit('update:something', $event.target.checked)" />
 ```
+
+## Select
+
+Uses `value` property and `@change` event
+
+### Native element
+
+```html
+<!-- shorthand -->
+<select v-model="selected">
+  <option disabled value="">Please select one</option>
+  <option>A</option>
+  <option>B</option>
+  <option>C</option>
+</select>
+<!-- expanded -->
+<select :value="something" @change="something = $event.target.value" />
+```
+
+### Parent-child
+
+```html
+<!-- parent -->
+<Child v-model:something="something"></Child>
+<!-- child -->
+<select :value="something" @change="$emit('update:something', $event.target.value)" />
+```
