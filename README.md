@@ -13,7 +13,7 @@ Should use `value` property and `@input` event
 <input :value="something" @input="something = $event.target.value" />
 ```
 
-### Parent child
+### Parent-child
 
 ```html
 <!-- parent -->
@@ -35,7 +35,7 @@ Should use `checked` property and `@change` event
 <input :checked="something" @change="something = $event.target.checked" />
 ```
 
-### Parent child
+### Parent-child
 
 ```html
 <!-- parent -->
