@@ -22,7 +22,7 @@ Should use `value` property and `@input` event
 <input :value="something" @input="$emit('update:something', $event.target.value)" />
 ```
 
-## Checkbox
+## Checkbox and radio
 
 Should use `checked` property and `@change` event
 
