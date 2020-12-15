@@ -2,7 +2,7 @@
 
 ## text types (text, password, textarea)
 
-Should use `value` property and `@input` event
+Uses `value` property and `@input` event
 
 ### Native element
 
@@ -24,7 +24,7 @@ Should use `value` property and `@input` event
 
 ## Checkbox and radio
 
-Should use `checked` property and `@change` event
+Uses `checked` property and `@change` event
 
 ### Native element
 
