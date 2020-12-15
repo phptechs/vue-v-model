@@ -52,7 +52,7 @@ Uses `value` property and `@change` event
 
 ```html
 <!-- shorthand -->
-<select v-model="selected">
+<select v-model="something">
   <option disabled value="">Please select one</option>
   <option>A</option>
   <option>B</option>
