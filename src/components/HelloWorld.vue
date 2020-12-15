@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <select :value="selected">
+    <select v-model="selected" @change="change">
       <option disabled value="">Please select one</option>
       <option>A</option>
       <option>B</option>

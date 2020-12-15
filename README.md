@@ -30,9 +30,9 @@ Uses `checked` property and `@change` event
 
 ```html
 <!-- shorthand -->
-<input v-model="something" />
+<input type="checkbox" v-model="something" />
 <!-- expanded -->
-<input :checked="something" @change="something = $event.target.checked" />
+<input type="checkbox" :checked="something" @change="something = $event.target.checked" />
 ```
 
 ### Parent-child
@@ -41,7 +41,7 @@ Uses `checked` property and `@change` event
 <!-- parent -->
 <Child v-model:something="something"></Child>
 <!-- child -->
-<input :checked="something" @change="$emit('update:something', $event.target.checked)" />
+<input type="checkbox" :checked="something" @change="$emit('update:something', $event.target.checked)" />
 ```
 
 ## Select
